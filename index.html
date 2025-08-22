@@ -44,7 +44,7 @@
   // ==== MOBILE SPEED-UP (≈35% faster feel) ====
   const MOBILE = /Mobi|Android/i.test(navigator.userAgent);
   if (MOBILE) {
-    const SPEED_UP = 1;
+    const SPEED_UP = 4.5;
     const fast = v => Math.max(1, (v / SPEED_UP) | 0); // timings chhote
 
     opts.fireworkSpawnTime       = fast(opts.fireworkSpawnTime);
@@ -316,6 +316,7 @@
   </script>
 </body>
 </html>
+
 
 
 
